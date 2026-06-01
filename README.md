@@ -1,6 +1,3 @@
-<img width="945" height="893" alt="Screenshot 2026-06-01 141459" src="https://github.com/user-attachments/assets/2ebfc830-4a44-4d98-a12b-f777fea9d6a2" />
-
-
 # Wins Tracker
 
 A habit tracking app built to help you stay consistent with your goals. Every day you show up is a mark on your calendar — track your streaks and look back on your progress to push through the difficult days.
@@ -40,4 +37,7 @@ Rebuilding this in React taught me:
 - useEffect for syncing state with localStorage
 - How React's render model eliminates the need to manually update the DOM
 
+---
 
+## Screenshots
+<img width="945" height="893" alt="Screenshot 2026-06-01 141459" src="https://github.com/user-attachments/assets/2ebfc830-4a44-4d98-a12b-f777fea9d6a2" />
