@@ -38,7 +38,4 @@ Rebuilding this in React taught me:
 - useEffect for syncing state with localStorage
 - How React's render model eliminates the need to manually update the DOM
 
----
-
-## Screenshots
 
