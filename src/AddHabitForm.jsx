@@ -6,23 +6,27 @@ function AddHabitForm({onAddHabit}){
     const [newHabitColor, setNewHabitColor] = useState('#ffffff')
 
     return(
-        <div>
-            <input 
-                value={newHabitName}
-                onChange={(e) => setNewHabitName(e.target.value)}
-                placeholder="New Habit Name"
-            />
-            <input 
-                type='color'
-                value={newHabitColor}
-                onChange={(e) => setNewHabitColor(e.target.value)}
-            />     
+        <div className="add-habit-card">
+            <h3>Create a new habit, pick a color!</h3>
+            <div id="new-habit-card">
+                <input id="new-habit-input"
+                    value={newHabitName}
+                    onChange={(e) => setNewHabitName(e.target.value)}
+                    placeholder="New Habit Name"
+                />
+                <input id="new-habit-color"
+                    type='color'
+                    value={newHabitColor}
+                    onChange={(e) => setNewHabitColor(e.target.value)}
+                />     
 
-            <button onClick={()=>{
-                onAddHabit(newHabitName, newHabitColor)
-                setNewHabitName('')
-                setNewHabitColor('#fffff')
-            }}>Submit</button>              
+                <button id="new-habit-submit"
+                    onClick={()=>{
+                    onAddHabit(newHabitName, newHabitColor)
+                    setNewHabitName('')
+                    setNewHabitColor('#fffff')
+                }}>Submit</button>       
+            </div>
         </div>
     )
 }

@@ -18,6 +18,8 @@ function App() {
     }
   )
 
+  const [editMode, setEditMode] = useState(false)
+
   useEffect(()=>{
     localStorage.setItem('calendarData', JSON.stringify(calendarData))
   }, [calendarData])
@@ -32,7 +34,12 @@ function App() {
 
   return (
     <div>
-      <h1>Habit Tracker</h1>
+      <h1 style={{textAlign:'center'}}>Wins Tracker</h1>
+      <p className="main-description">
+        Track your daily wins and build unstoppable momentum. 
+        Every day you show up is a mark on your calendar — 
+        add your habits below and see how long you can keep the chain going!
+      </p>
 
       <div className="habit-cards">
         {Object.entries(categoryColors).map(([name, color]) => (
@@ -41,6 +48,7 @@ function App() {
             name={name}
             color={color}
             activeCategory={activeCategory}
+            editMode={editMode}
             onSelect={() => setActiveCategory(name)}
             habitCounter={Object.values(calendarData).filter(categories => categories.includes(name)).length}
             onDeleteHabit={(name) => {
@@ -54,6 +62,11 @@ function App() {
             }}
           />
         ))}
+
+        <button id="edit-btn" 
+          onClick={() => setEditMode(!editMode)}>
+          {editMode ? 'Done' : 'Edit'}
+        </button>  
       </div>
 
       <Calendar
