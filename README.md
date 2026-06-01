@@ -1,16 +1,43 @@
-# React + Vite
+# Wins Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A habit tracking app built to help you stay consistent with your goals. Every day you show up is a mark on your calendar — track your streaks and look back on your progress to push through the difficult days.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://winstrackerreact.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- localStorage
+- Netlify
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Add and delete custom habits with a color of your choice
+- Click any calendar day to log a habit — a colored dot appears for each tracked habit
+- Habit cards display a running total of how many days each habit has been logged
+- Edit mode to manage your habits
+- Data persists on refresh via localStorage
+- Month navigation to view past and future months
+
+---
+
+## What I Learned
+
+This project was my first React app, built as a step up from a vanilla JS version of the same app. In vanilla JS I had to manually create DOM elements, store data, and re-render everything on page refresh — often writing the same logic twice.
+
+Rebuilding this in React taught me:
+- Component based architecture and how to break UI into reusable pieces
+- State management with useState and when state should live in a parent vs child component
+- Passing data down via props and events up via callback functions
+- useEffect for syncing state with localStorage
+- How React's render model eliminates the need to manually update the DOM
+
+---
+
+## Screenshots
+
